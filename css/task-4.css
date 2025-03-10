@@ -1,0 +1,68 @@
+.login-form{
+    display: flex;
+    align-items:  flex-start;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 288px;
+
+    border-radius: 8px;
+    padding: 24px;
+    width: 408px;
+
+    background: #fff;
+}
+
+label{
+    display: flex;
+    flex-direction: column; 
+    font-weight: bold;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    /* line-height: 24px; */ 
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+input{
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 16px;
+}
+
+button{
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 86px;
+    height: 40px;
+
+    background: #4e75ff;
+
+    font-family: "Montserrat", sans-serif;
+font-weight: 500;
+font-size: 16px;
+
+/* line-height: 24px; */ 
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+}
+
+button:hover{
+    background: #6c8cff;
+}
+
+input:hover{
+   border: 1px solid #000;
+}
+
+input:active{
+   border: 1px solid #808080;
+}
+
