@@ -83,14 +83,14 @@ const listImage = images
   .join("");
 gallery.insertAdjacentHTML("afterbegin", listImage);
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".gallery-link").forEach((link) => {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const largeImageUrl = this.querySelector(".gallery-image").dataset.source;
+gallery.addEventListener("click", onClickImage);
 
-      console.log("Завантаження зображення:", largeImageUrl);
-      // Тут можна додати код для відкриття модального вікна з великим зображенням
-    });
-  });
-});
+function onClickImage(event) {
+  event.preventDefault();
+  if (event.target.classList.contains("gallery-image")) {
+    const largeImageUrl = event.target.dataset.source;
+    console.log(largeImageUrl);
+  } else {
+    return;
+  }
+}
