@@ -87,7 +87,10 @@ gallery.addEventListener("click", onClickImage);
 
 function onClickImage(event) {
   event.preventDefault();
-  if (event.target.classList.contains("gallery-image")) {
+  //console.log(event);
+
+  //if (event.target.classList.contains("gallery-image")) {
+  if (event.target.nodeName === "IMG") {
     const largeImageUrl = event.target.dataset.source;
     //console.log(largeImageUrl);
     const instance = basicLightbox.create(`
